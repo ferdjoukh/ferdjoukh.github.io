@@ -57,6 +57,7 @@ echo '           <li class="dropdown">' >> $menu
 echo '            </ul>' >> $menu
 echo '           </li>' >> $menu
 
+echo '           <li><a href="index.html#websites">Publications</a></li>' >> $menu
 echo '           <li><a href="index.html#websites">Teaching</a></li>' >> $menu
 echo '           <li><a href="index.html#statistics">Contact</a></li>' >> $menu
 echo '         </ul>' >> $menu

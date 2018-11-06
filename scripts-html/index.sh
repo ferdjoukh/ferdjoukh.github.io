@@ -46,7 +46,7 @@ echo ''>> $index_tmp
 #################################################
 echo '<div class="container">' >> $index_tmp
 
-
+cat "../sub-pages/sub-index.html" >> $index_tmp
 
 #################################################
 #
