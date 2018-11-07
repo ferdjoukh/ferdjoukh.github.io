@@ -77,12 +77,12 @@ fieldset[disabled] .btn-pyta.focus {
 }
 
 .panel-pyta{
-  border-color: #B23A48;  
+  border-color: #000;  
 }
 
 .panel-pyta > .panel-heading {
   color: #fff;
-  background-color: #B23A48;
+  background-color: #000;
   border-color: #ddd;
 }
 
@@ -99,12 +99,33 @@ fieldset[disabled] .btn-pyta.focus {
 }
 
 .lettrine {
-padding:5px; 
-margin: 5px 10px 0px 0px; 
-font-size:80px; 
-line-height: 1em 
+  float: left;
+  font-size:75px; 
+  line-height: 1em; 
+  padding: 2px;
 }
 
 .stat-p{
 font-size:35px; 
+}
+
+.text{
+  
+  text-align: justify;
+}
+
+.big{
+  font-size: 20px;
+}
+
+.medium{
+  font-size: 16px;
+}
+
+.img-header{
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 400px;
 }

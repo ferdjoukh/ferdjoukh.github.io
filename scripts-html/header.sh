@@ -6,15 +6,7 @@ header='../tmp-html/header'
 echo '' >> $header
 
 echo '  <div class="page-header">' >> $header
-echo '   <div class="jumbotron">' >> $header
-echo '    <div class="container">' >> $header
-echo '      <div class="row">' >> $header
-
-echo '' >> $header
-
-echo '        </div>  ' >> $header
-echo '      </div>' >> $header
-echo '   </div>' >> $header
+echo '		<img src="img/ban1.jpg" width="100%" class="img-header" />' >> $header
 echo '  </div>' >> $header
 
 echo '' >> $header
