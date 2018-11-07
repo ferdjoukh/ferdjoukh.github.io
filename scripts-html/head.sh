@@ -21,4 +21,11 @@ echo '<script src="bootstrap/js/bootstrap.min.js"></script>' >> $head
 echo '<script src="css-js/selection.js"></script>' >> $head
 echo '<!-- Custom styles for this template -->' >> $head
 echo '<link href="css-js/lot.css" rel="stylesheet">' >> $head
+
+echo "<script>" >> $head
+echo "\$(document).ready(function(){" >> $head
+echo "\$('[data-toggle=\"popover\"]').popover(); " >> $head
+echo "});" >> $head
+echo "</script>" >> $head
+
 echo '</head>' >> $head

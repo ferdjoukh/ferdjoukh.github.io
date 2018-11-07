@@ -129,8 +129,17 @@ font-size:35px;
   left: 0;
 }
 
+.contact{
+  position: relative;
+  background-color: white;
+  height: 40px;
+  width: 200px;
+  top: -90px;
+  left: 11%;
+}
+
 .in{
   position: relative;
-  top: -60px;
+  top: -100px;
   left: 11%;
 }

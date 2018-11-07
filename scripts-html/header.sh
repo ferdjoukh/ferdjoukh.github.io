@@ -10,8 +10,15 @@ echo '		<img src="img/ban1.jpg" width="100%" class="img-header" />' >> $header
 echo '  	<div class="in">' >> $header
 echo '      	<a href="" class="btn btn-lg btn-pyta"><span class="glyphicon glyphicon-home"></span></a>' >> $header
 echo '      	<a href="https://github.com/ferdjoukh" target="_blank" class="btn btn-lg btn-pyta"><img src="img/gitw.png" alt="github" width="25px;"/> Github</a>' >> $header
-echo '      	<a href="" class="btn btn-lg btn-pyta">Contact</a>' >> $header
+echo '      	<button class="btn btn-lg btn-pyta" data-toggle="popover" data-container="body" data-content="email: ferdjoukh@gmail.com">Contact</button>' >> $header
 echo '  	</div>' >> $header
+
+echo '      <div id="collapse1" class="panel-collapse collapse contact">' >> $header
+echo '		  <h4>ferdjoukh@gmail.com</h4>' >> $header
+echo '		</div>' >> $header
+
 echo '  </div>' >> $header
+
+
 
 echo '' >> $header

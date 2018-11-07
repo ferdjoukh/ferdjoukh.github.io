@@ -13,4 +13,9 @@
 <script src="css-js/selection.js"></script>
 <!-- Custom styles for this template -->
 <link href="css-js/lot.css" rel="stylesheet">
+<script>
+$(document).ready(function(){
+$('[data-toggle="popover"]').popover(); 
+});
+</script>
 </head>

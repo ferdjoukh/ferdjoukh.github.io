@@ -4,7 +4,10 @@
   	<div class="in">
       	<a href="" class="btn btn-lg btn-pyta"><span class="glyphicon glyphicon-home"></span></a>
       	<a href="https://github.com/ferdjoukh" target="_blank" class="btn btn-lg btn-pyta"><img src="img/gitw.png" alt="github" width="25px;"/> Github</a>
-      	<a href="" class="btn btn-lg btn-pyta">Contact</a>
+      	<button class="btn btn-lg btn-pyta" data-toggle="popover" data-container="body" data-content="email: ferdjoukh@gmail.com">Contact</button>
   	</div>
+      <div id="collapse1" class="panel-collapse collapse contact">
+		  <h4>ferdjoukh@gmail.com</h4>
+		</div>
   </div>
 
