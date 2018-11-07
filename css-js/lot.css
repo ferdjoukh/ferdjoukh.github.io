@@ -1,7 +1,7 @@
 /* custom button */
 .btn-pyta {
   color: #fff;
-  background-color: #B23A48;
+  background-color: #000;
   border-color: #ccc;
 }
 .btn-pyta:focus,
@@ -127,4 +127,10 @@ font-size:35px;
   width: 100%;
   top: 0;
   left: 0;
+}
+
+.in{
+  position: relative;
+  top: -60px;
+  left: 63%;
 }
