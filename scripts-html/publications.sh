@@ -46,6 +46,12 @@ echo ''>> $index_tmp
 #################################################
 echo '<div class="container">' >> $index_tmp
 
+
+echo '<textarea id="bibtex_input" style="display:none;">' >> $index_tmp
+cat "../data/biblio.bib" >> $index_tmp
+echo '</textarea>' >> $index_tmp
+
+
 cat "../sub-pages/sub-publications.html" >> $index_tmp
 
 #################################################
