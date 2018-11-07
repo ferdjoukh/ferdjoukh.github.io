@@ -32,8 +32,8 @@ echo '           <li class="dropdown">' >> $menu
  echo '           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Curriculum Vitae <b class="caret"></b></a>' >> $menu
   echo '           <ul class="dropdown-menu">' >> $menu
 
-    echo '           <li><a href="https://github.com/ferdjoukh/LaTeX/blob/master/CV/pdf/CVFerdjoukh_en.pdf" target="_blank"><img src="img/uk.png" width="25" alt="English"/> English</a></li>' >> $menu
-    echo '           <li><a href="https://github.com/ferdjoukh/LaTeX/blob/master/CV/pdf/CVFerdjoukh.pdf" target="_blank"><img src="img/fr.png" width="25" alt="French"/> Français</a></li>' >> $menu
+    echo '           <li><a href="https://github.com/ferdjoukh/LaTeX/raw/master/CV/pdf/CVFerdjoukh_en.pdf" target="_blank"><img src="img/uk.png" width="25" alt="English"/> English</a></li>' >> $menu
+    echo '           <li><a href="https://github.com/ferdjoukh/LaTeX/raw/master/CV/pdf/CVFerdjoukh.pdf" target="_blank"><img src="img/fr.png" width="25" alt="French"/> Français</a></li>' >> $menu
 
 echo '            </ul>' >> $menu
 echo '           </li>' >> $menu
