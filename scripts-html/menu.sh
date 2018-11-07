@@ -19,7 +19,7 @@ echo '       </div>' >> $menu
 echo '       <div id="navbar" class="collapse navbar-collapse">' >> $menu
 echo '         <ul class="nav navbar-nav">' >> $menu
 echo '           <li><a href="index.html">Home</a></li>' >> $menu
-echo '           <li><a href="news.html">News</a></li>' >> $menu
+echo '           <li><a href="index.html">News</a></li>' >> $menu
 
 
 ############################
@@ -48,17 +48,17 @@ echo '           <li class="dropdown">' >> $menu
  echo '           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>' >> $menu
   echo '           <ul class="dropdown-menu">' >> $menu
 
-	echo "         	  <li><a href=\"404.html\">Quick story</a></li>" >> $menu
-    echo "            <li><a href=\"404.html\">Grimm</a></li>" >> $menu
-    echo "            <li><a href=\"404.html\">COMODI</a></li>" >> $menu
-    echo "            <li><a href=\"404.html\">Tiwizi</a></li>" >> $menu
-    echo "            <li><a href=\"404.html\">Data</a></li>" >> $menu
+	echo "         	  <li><a href=\"index.html\">Quick story</a></li>" >> $menu
+    echo "            <li><a href=\"index.html\">Grimm</a></li>" >> $menu
+    echo "            <li><a href=\"index.html\">COMODI</a></li>" >> $menu
+    echo "            <li><a href=\"index.html\">Tiwizi</a></li>" >> $menu
+    echo "            <li><a href=\"index.html\">Data</a></li>" >> $menu
   
 echo '            </ul>' >> $menu
 echo '           </li>' >> $menu
 
-echo '           <li><a href="index.html#websites">Publications</a></li>' >> $menu
-echo '           <li><a href="index.html#websites">Teaching</a></li>' >> $menu
+echo '           <li><a href="publications.html">Publications</a></li>' >> $menu
+echo '           <li><a href="index.html">Teaching</a></li>' >> $menu
 echo '         </ul>' >> $menu
 echo '       </div><!--/.nav-collapse -->' >> $menu
 echo '     </div>' >> $menu
