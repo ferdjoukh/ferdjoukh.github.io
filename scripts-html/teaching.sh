@@ -1,6 +1,6 @@
 #!/bin/bash
 
-index_tmp='../tmp-html/publications-tmp.html'
+index_tmp='../tmp-html/teaching-tmp.html'
 head='../tmp-html/head'
 menu='../tmp-html/menu'
 header='../tmp-html/header'
@@ -50,32 +50,7 @@ echo '<div class="row">' >> $index_tmp
 # Generate the content of the page (left col)
 #
 #################################################
-echo '' >> $index_tmp
-echo '<div class="col-sm-8">' >> $index_tmp
-echo ' <div class="panel panel-pyta">' >> $index_tmp
-echo '  <div class="panel-heading"><h4>List of Publications</h4></div>  ' >> $index_tmp
-echo '   <div class="panel-body">' >> $index_tmp
-echo '' >> $index_tmp
-
-./bibtex2html -d -r -noheader -nf slides slides "../data/biblio.bib"
-cat "biblio.html" >> $index_tmp
-rm "biblio.html"
-mv "biblio_bib.html" "../"
-
-echo '' >> $index_tmp
-
-echo '' >> $index_tmp
-echo '			' >> $index_tmp
-echo '	 </div>' >> $index_tmp
-echo '	</div>' >> $index_tmp
-echo '' >> $index_tmp
-echo '	<br/>' >> $index_tmp
-echo '' >> $index_tmp
-echo '	<br/>' >> $index_tmp
-echo '	<br/>' >> $index_tmp
-echo '	<br/>' >> $index_tmp
-echo '' >> $index_tmp
-echo '</div>' >> $index_tmp
+cat "../sub-pages/col-left-teaching.html" >> $index_tmp
 
 #################################################
 #
@@ -104,6 +79,6 @@ echo '</html>' >> $index_tmp
 # Copy the produced page into the main folder
 #
 #################################################
-index='../publications.html'
+index='../teaching.html'
 cp $index_tmp $index
-echo "..publications.html page has been generated"
+echo "..teaching.html page has been generated"

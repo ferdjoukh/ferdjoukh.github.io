@@ -58,7 +58,7 @@ echo '            </ul>' >> $menu
 echo '           </li>' >> $menu
 
 echo '           <li><a href="publications.html">Publications</a></li>' >> $menu
-echo '           <li><a href="index.html">Teaching</a></li>' >> $menu
+echo '           <li><a href="teaching.html">Teaching</a></li>' >> $menu
 echo '         </ul>' >> $menu
 echo '       </div><!--/.nav-collapse -->' >> $menu
 echo '     </div>' >> $menu

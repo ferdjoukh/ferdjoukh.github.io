@@ -46,7 +46,20 @@ echo ''>> $index_tmp
 #################################################
 echo '<div class="container">' >> $index_tmp
 
+### OPEN row
+echo '<div class="row">' >> $index_tmp
+
 cat "../sub-pages/sub-index.html" >> $index_tmp
+
+#################################################
+#
+# Add the right column
+#
+#################################################
+cat "../sub-pages/col.html" >> $index_tmp
+
+### CLOSE row
+echo '</div>' >> $index_tmp
 
 #################################################
 #
