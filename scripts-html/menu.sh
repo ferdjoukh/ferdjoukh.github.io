@@ -48,10 +48,10 @@ echo '           <li class="dropdown">' >> $menu
  echo '           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>' >> $menu
   echo '           <ul class="dropdown-menu">' >> $menu
 
-	echo "         	  <li><a href=\"index.html\">Quick story</a></li>" >> $menu
-    echo "            <li><a href=\"index.html\">Grimm</a></li>" >> $menu
-    echo "            <li><a href=\"index.html\">COMODI</a></li>" >> $menu
-    echo "            <li><a href=\"index.html\">Tiwizi</a></li>" >> $menu
+	echo "         	  <li><a href=\"research.html\">Quick story</a></li>" >> $menu
+    echo "            <li><a href=\"https://github.com/ferdjoukh/grimm\" target=\"_blank\">Grimm</a></li>" >> $menu
+    echo "            <li><a href=\"https://github.com/ferdjoukh/comodi\" target=\"_blank\">Comodi</a></li>" >> $menu
+    echo "            <li><a href=\"https://github.com/ferdjoukh/tiwizi\" target=\"_blank\">Tiwizi</a></li>" >> $menu
     echo "            <li><a href=\"index.html\">Data</a></li>" >> $menu
   
 echo '            </ul>' >> $menu

@@ -3,4 +3,5 @@
 ./index.sh
 ./publications.sh
 ./teaching.sh
+./research.sh
 
