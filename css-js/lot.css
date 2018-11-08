@@ -134,3 +134,17 @@ font-size:35px;
   top: -60px;
   left: 11%;
 }
+
+table tr td{
+  padding-bottom: 10px;
+}
+
+table tr .bibtexitem{
+  font-size: 16px;
+  text-align: justify;
+}
+
+table tr .bibtexnumber{
+ font-size: 21px;
+ padding: 10px;  
+}

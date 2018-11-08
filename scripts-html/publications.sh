@@ -41,18 +41,46 @@ echo ''>> $index_tmp
 
 #################################################
 #
-# Generate the content of index.html page
+# Generate the content of the page
 #
 #################################################
 echo '<div class="container">' >> $index_tmp
 
+echo '<div class="row">' >> $index_tmp
+echo '' >> $index_tmp
+echo '<div class="col-sm-8">' >> $index_tmp
+echo ' <div class="panel panel-pyta">' >> $index_tmp
+echo '  <div class="panel-heading"><h4>List of Publications</h4></div>  ' >> $index_tmp
+echo '   <div class="panel-body">' >> $index_tmp
+echo '' >> $index_tmp
 
-echo '<textarea id="bibtex_input" style="display:none;">' >> $index_tmp
-cat "../data/biblio.bib" >> $index_tmp
-echo '</textarea>' >> $index_tmp
+./bibtex2html -d -r -noheader -nf slides slides "../data/biblio.bib"
+cat "biblio.html" >> $index_tmp
+rm "biblio.html"
+mv "biblio_bib.html" "../"
 
+echo '' >> $index_tmp
 
-cat "../sub-pages/sub-publications.html" >> $index_tmp
+echo '' >> $index_tmp
+echo '			' >> $index_tmp
+echo '	 </div>' >> $index_tmp
+echo '	</div>' >> $index_tmp
+echo '' >> $index_tmp
+echo '	<br/>' >> $index_tmp
+echo '' >> $index_tmp
+echo '	<br/>' >> $index_tmp
+echo '	<br/>' >> $index_tmp
+echo '	<br/>' >> $index_tmp
+echo '' >> $index_tmp
+echo '</div>' >> $index_tmp
+
+#################################################
+#
+# Add the right column
+#
+#################################################
+cat "../sub-pages/col.html" >> $index_tmp
+
 
 #################################################
 #
