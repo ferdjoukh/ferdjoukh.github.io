@@ -132,7 +132,8 @@ font-size:35px;
 .in{
   position: relative;
   top: -60px;
-  left: 11%;
+  left: 10%;
+  width:50%;
 }
 
 table tr td{
