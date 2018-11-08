@@ -19,7 +19,7 @@ echo '       </div>' >> $menu
 echo '       <div id="navbar" class="collapse navbar-collapse">' >> $menu
 echo '         <ul class="nav navbar-nav">' >> $menu
 echo '           <li><a href="index.html">Home</a></li>' >> $menu
-echo '           <li><a href="index.html">News</a></li>' >> $menu
+echo '           <li><a href="news.html">News</a></li>' >> $menu
 
 
 ############################

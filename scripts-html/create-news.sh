@@ -1,6 +1,10 @@
 #!/bin/bash
 
-index_tmp='../tmp-html/publications-tmp.html'
+# This script creates a news.html
+# PARAMS
+#	$1: title and name of output html
+
+index_tmp="../tmp-html/$1-tmp.html"
 head='../tmp-html/head'
 menu='../tmp-html/menu'
 header='../tmp-html/header'
@@ -15,7 +19,7 @@ echo '<html>' >> $index_tmp
 # Genrate the html HEAD tag
 #
 #################################################
-./head.sh "Publications"
+./head.sh "News - $1"
 cat $head >> $index_tmp
 echo ''>> $index_tmp
 
@@ -50,31 +54,8 @@ echo '<div class="row">' >> $index_tmp
 # Generate the content of the page (left col)
 #
 #################################################
-echo '' >> $index_tmp
 echo '<div class="col-sm-8">' >> $index_tmp
-echo ' <div class="panel panel-pyta">' >> $index_tmp
-echo '  <div class="panel-heading"><h4>List of Publications</h4></div>  ' >> $index_tmp
-echo '   <div class="panel-body">' >> $index_tmp
-echo '' >> $index_tmp
-
-./bibtex2html -note note -d -r -noheader -nf slides slides "../data/biblio.bib"
-cat "biblio.html" >> $index_tmp
-rm "biblio.html"
-mv "biblio_bib.html" "../"
-
-echo '' >> $index_tmp
-
-echo '' >> $index_tmp
-echo '			' >> $index_tmp
-echo '	 </div>' >> $index_tmp
-echo '	</div>' >> $index_tmp
-echo '' >> $index_tmp
-echo '	<br/>' >> $index_tmp
-echo '' >> $index_tmp
-echo '	<br/>' >> $index_tmp
-echo '	<br/>' >> $index_tmp
-echo '	<br/>' >> $index_tmp
-echo '' >> $index_tmp
+cat "../tmp-news/$1.html" >> $index_tmp
 echo '</div>' >> $index_tmp
 
 #################################################
@@ -104,6 +85,6 @@ echo '</html>' >> $index_tmp
 # Copy the produced page into the main folder
 #
 #################################################
-index='../publications.html'
+index="../$1.html"
 cp $index_tmp $index
-echo "..publications.html page has been generated"
+echo "..$1 news has been generated"

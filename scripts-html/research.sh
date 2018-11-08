@@ -15,7 +15,7 @@ echo '<html>' >> $index_tmp
 # Genrate the html HEAD tag
 #
 #################################################
-./head.sh "Home"
+./head.sh "Research"
 cat $head >> $index_tmp
 echo ''>> $index_tmp
 
