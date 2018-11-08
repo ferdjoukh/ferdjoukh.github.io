@@ -57,7 +57,7 @@ echo '  <div class="panel-heading"><h4>List of Publications</h4></div>  ' >> $in
 echo '   <div class="panel-body">' >> $index_tmp
 echo '' >> $index_tmp
 
-./bibtex2html -d -r -noheader -nf slides slides "../data/biblio.bib"
+./bibtex2html -note note -d -r -noheader -nf slides slides "../data/biblio.bib"
 cat "biblio.html" >> $index_tmp
 rm "biblio.html"
 mv "biblio_bib.html" "../"
