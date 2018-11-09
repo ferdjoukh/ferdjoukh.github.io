@@ -6,6 +6,9 @@
 head='../tmp-html/head'
 :> $head
 
+echo '<!DOCTYPE html>' >> $head
+echo '<html lang="en">' >> $head
+
 echo '<head>' >> $head
 echo '<meta name="description" content="">' >> $head
 echo '<meta name="author" content="Adel Ferdjoukh">' >> $head

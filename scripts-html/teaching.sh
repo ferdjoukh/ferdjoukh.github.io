@@ -7,9 +7,6 @@ header='../tmp-html/header'
 
 :> $index_tmp
 
-echo '<!DOCTYPE html>' >> $index_tmp
-echo '<html>' >> $index_tmp
-
 #################################################
 #
 # Genrate the html HEAD tag

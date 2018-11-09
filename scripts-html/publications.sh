@@ -7,9 +7,6 @@ header='../tmp-html/header'
 
 :> $index_tmp
 
-echo '<!DOCTYPE html>' >> $index_tmp
-echo '<html>' >> $index_tmp
-
 #################################################
 #
 # Genrate the html HEAD tag
@@ -57,7 +54,7 @@ echo '  <div class="panel-heading"><h4>List of Publications</h4></div>  ' >> $in
 echo '   <div class="panel-body">' >> $index_tmp
 echo '' >> $index_tmp
 
-./bibtex2html -note note -d -r -noheader -nf slides slides "../data/biblio.bib"
+./bibtex2html -note note -d -r -nodoc -noheader -nf slides slides "../data/biblio.bib"
 cat "biblio.html" >> $index_tmp
 rm "biblio.html"
 mv "biblio_bib.html" "../"

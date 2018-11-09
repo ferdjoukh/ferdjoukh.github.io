@@ -7,9 +7,6 @@ header='../tmp-html/header'
 
 :> $index_tmp
 
-echo '<!DOCTYPE html>' >> $index_tmp
-echo '<html>' >> $index_tmp
-
 #################################################
 #
 # Genrate the html HEAD tag
@@ -70,13 +67,19 @@ for file in $(ls -t $dirmd); do
 
 	cat "$dir$name.html" | head -n +2 >> $index_tmp
 
+	echo '<div class="read-more">' >> $index_tmp
+	echo "	<a href=\"$name.html\" class=\"btn btn-lg btn-pyta\">read more</a>" >> $index_tmp
+	echo "<br/>" >> $index_tmp
+	echo "<br/>" >> $index_tmp
+	echo "	<p><span class=\"last-modif\">last modification: $modif</span></p>" >> $index_tmp
+	echo '</div>' >> $index_tmp
+
+	
+
+	echo "<hr/>" >> $index_tmp
+
 	echo "<br/>" >> $index_tmp
 
-	echo "<span class=\"date\">last modification: $modif</span>" >> $index_tmp
-
-	echo "<br/>" >> $index_tmp
-
-	echo "<a href=\"$name.html\" class=\"btn btn-pyta\">read more</a>" >> $index_tmp
 
 done
 

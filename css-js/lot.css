@@ -133,7 +133,7 @@ font-size:35px;
   position: relative;
   top: -60px;
   left: 10%;
-  width:50%;
+  width: 90%;
 }
 
 table tr td{
@@ -148,4 +148,26 @@ table tr .bibtexitem{
 table tr .bibtexnumber{
  font-size: 21px;
  padding: 10px;  
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.full-img{
+  width: 100%;
+}
+
+.read-more{
+  text-align: right;
+}
+
+.last-modif{
+  font-size: 12px;
 }
