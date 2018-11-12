@@ -52,7 +52,7 @@ echo '           <li class="dropdown">' >> $menu
     echo "            <li><a href=\"https://github.com/ferdjoukh/grimm\" target=\"_blank\">Grimm</a></li>" >> $menu
     echo "            <li><a href=\"https://github.com/ferdjoukh/comodi\" target=\"_blank\">Comodi</a></li>" >> $menu
     echo "            <li><a href=\"https://github.com/ferdjoukh/tiwizi\" target=\"_blank\">Tiwizi</a></li>" >> $menu
-    echo "            <li><a href=\"https://github.com/ferdjoukh/data-MDE\">Data</a></li>" >> $menu
+    echo "            <li><a href=\"https://github.com/ferdjoukh/data-MDE\" target=\"_blank\">Data</a></li>" >> $menu
   
 echo '            </ul>' >> $menu
 echo '           </li>' >> $menu
