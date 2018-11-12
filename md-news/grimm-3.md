@@ -1,6 +1,6 @@
 # [software] grimm 3.0 is here
 
-<img src="img/news.png" alt="News" class="full-img"/>
+<img src="img/software.png" alt="News" class="full-img"/>
 
 We are proud to announce that our model generation tool has a new release, grimm 3.0 !
 
