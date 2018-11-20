@@ -7,7 +7,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Adel Ferdjoukh - News</title>
+<title>Adel Ferdjoukh - News - grimm-5</title>
 <!-- Bootstrap core CSS -->
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script src="bootstrap/js/jquery-3.3.1.min.js"></script>
@@ -77,84 +77,38 @@ $('[data-toggle="popover"]').popover();
 
 <div class="container">
 <div class="row">
-
 <div class="col-sm-8">
- <div class="panel panel-pyta">
-  <div class="panel-heading"><h4>Last news</h4></div>  
-   <div class="panel-body">
-
 <h1 id="software-grimm-v5.0-is-here">[software] grimm v5.0 is here</h1>
 <p><img src="img/software.png" alt="News" class="full-img"/></p>
-<div class="read-more">
-	<a href="grimm-5.html" class="btn btn-lg btn-pyta">read more</a>
-<br/>
-<br/>
-	<p><span class="last-modif">last modification: 11-20-2018 16:58:14</span></p>
-</div>
-<hr/>
-<br/>
-<h1 id="tutorial-create-your-graphical-editor-with-eclipse-sirius">[Tutorial] Create your graphical editor with Eclipse Sirius</h1>
-<p><img src="img/tutorial.png" alt="Tutorial" class="full-img"/></p>
-<div class="read-more">
-	<a href="eclipse-Sirius-tuto.html" class="btn btn-lg btn-pyta">read more</a>
-<br/>
-<br/>
-	<p><span class="last-modif">last modification: 11-15-2018 16:41:02</span></p>
-</div>
-<hr/>
-<br/>
-<h1 id="software-grimm-v4.0-is-here">[software] grimm v4.0 is here</h1>
-<p><img src="img/software.png" alt="News" class="full-img"/></p>
-<div class="read-more">
-	<a href="grimm-4.html" class="btn btn-lg btn-pyta">read more</a>
-<br/>
-<br/>
-	<p><span class="last-modif">last modification: 11-15-2018 16:18:28</span></p>
-</div>
-<hr/>
-<br/>
-<h1 id="software-grimm-3.0-is-here">[software] grimm 3.0 is here</h1>
-<p><img src="img/software.png" alt="News" class="full-img"/></p>
-<div class="read-more">
-	<a href="grimm-3.html" class="btn btn-lg btn-pyta">read more</a>
-<br/>
-<br/>
-	<p><span class="last-modif">last modification: 11-12-2018 15:50:00</span></p>
-</div>
-<hr/>
-<br/>
-<h1 id="accepted-paper-towards-an-automated-fault-localizer-while-designing-meta-models">[accepted paper] Towards an automated fault localizer while designing meta-models</h1>
-<p><img src="img/news.png" alt="News" class="full-img"/></p>
-<div class="read-more">
-	<a href="accepted-paper-MDEbug.html" class="btn btn-lg btn-pyta">read more</a>
-<br/>
-<br/>
-	<p><span class="last-modif">last modification: 11-12-2018 15:14:46</span></p>
-</div>
-<hr/>
-<br/>
-<h1 id="our-new-website-is-now-available">Our new website is now available</h1>
-<p><img src="img/news.png" alt="News" class="full-img"/></p>
-<div class="read-more">
-	<a href="new-website.html" class="btn btn-lg btn-pyta">read more</a>
-<br/>
-<br/>
-	<p><span class="last-modif">last modification: 11-12-2018 15:14:46</span></p>
-</div>
-<hr/>
-<br/>
-
-
-			
-	 </div>
-	</div>
-
-	<br/>
-
-	<br/>
-	<br/>
-	<br/>
-
+<p>We are proud to announce that our model generation tool has a new release, grimm v5.0 !</p>
+<p>You can download this new version <a href="https://github.com/ferdjoukh/grimm/releases/tag/v5.0-d20112018">here</a>.</p>
+<h2 id="new-features">New features</h2>
+<ul>
+<li>Adding random diversity when assigning values for attributes of type: EEnum, EInt, EBoolean and EString.</li>
+<li>EString attributes have 2 default configuration modes:
+<ul>
+<li><strong>name</strong> is applied for name attributes. Each attribute is named following his class and EObject ID (eg. Method4).</li>
+<li><strong>random</strong> is applied for other attributes. A random string is generated (3 to 10 alphabetic symbols).</li>
+</ul></li>
+<li>Allow the users to give custom domains for EInt and EString by using a configuration file (.grimm)
+<ul>
+<li>For <strong>EInt</strong> attributes, users can give either an interval (25..30) or a list of values (-1 0 1). This is useful for example in UML meta-model to set up the lower and upper bound of an Association.</li>
+<li>For <strong>EString</strong> attributes, users can give a list of values. It is interesting to get more customisable models.</li>
+</ul></li>
+<li>Variables that represent attributes in CSP are removed. Instantiation is done as a post-processing (after the CSP solver).</li>
+<li>Default interval for EInt attributes us set to 1..100 (can be changes by using a config file).</li>
+</ul>
+<h2 id="corrected-bugs">Corrected bugs</h2>
+<ul>
+<li>Corrected bug: Attribute types are printed in config files as a reminder.</li>
+<li>Corrected bug: A generated pre-filled config file is now consistent and can be used to generate an empty model.</li>
+<li>Corrected bug: Boolean and EEnum attribute are removed from config files.</li>
+<li>Corrected bug: created config files are stored in the folder chosen by the user and not in <em>rootClass</em> folder.</li>
+<li>Corrected bug: problem of instantiation for 0..* references when reference UB is set to 1.</li>
+</ul>
+<h2 id="documentation">Documentation</h2>
+<p>Using grimm is easy ! 5 minutes to read the <a href="https://github.com/ferdjoukh/grimm/blob/master/README.md">documentation</a> and then go !</p>
+<p><br/> <br/> <br/></p>
 </div>
 
 <div class="col-sm-3">
